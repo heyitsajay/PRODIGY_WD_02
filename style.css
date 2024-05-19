@@ -1,0 +1,101 @@
+:root{
+    --prim-col : #343a40;
+    --seco-col : #adb5bd;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(63,94,251);
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+.flex-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    
+    background-color: var(--seco-col);
+    border-radius: 5vh;
+    padding: 2vh;
+    gap: 8vh;
+}
+.container .screen{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--prim-col);
+    font-size: xx-large;
+    padding: 2vh;
+    border-radius: 3vh;
+    color: var(--seco-col);
+}
+.container .btns{
+    gap: 1vw;
+}
+.container .btn{
+    padding: 2vh 2vw;
+    border-radius: 2vh;
+    background-color: var(--prim-col);
+    color: var(--seco-col);
+    font-weight: 600;
+    cursor: pointer;
+    border: 0.5vh solid transparent;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: var(--prim-col);
+    border: 0.5vh solid var(--prim-col);
+}
+#start{
+    background-color: rgb(13, 141, 13);
+    color: white;
+}
+#stop{
+    background-color: red;
+    color: white;
+}
+#reset{
+    background-color: royalblue;
+    color: white;
+}
+#lap{
+    background-color: #343a40;
+    color: white;
+}
+#laps {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lap {
+    padding: 5px 10px;
+    margin: 5px 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+}
